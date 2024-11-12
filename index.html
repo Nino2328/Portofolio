@@ -1,0 +1,578 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vapor Haven</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css" rel="stylesheet">
+    <script src="path/to/category-nav.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Main Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">Vapor Haven</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMain">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarMain">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">HOME</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">SHOP</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">BE RESELLER</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">FIND A STORE</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">VAPE CORNER</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">ABOUT US</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">CONTACT US</a>
+                    </li>
+                </ul>
+                
+                <div class="d-flex align-items-center">
+                    <a href="#" class="btn btn-outline-light me-2">
+                        <i class="bi bi-person me-1"></i>
+                        LOGIN / REGISTER
+                    </a>
+                    <div class="icons-group">
+                        <a href="#" class="text-white position-relative me-3">
+                            <i class="bi bi-heart"></i>
+                            <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-primary">
+                                652
+                            </span>
+                        </a>
+                        <a href="#" class="text-white position-relative me-3">
+                            <i class="bi bi-arrow-left-right"></i>
+                            <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-primary">
+                                322
+                            </span>
+                        </a>
+                        <a href="#" class="text-white position-relative">
+                            <i class="bi bi-cart3"></i>
+                            <span class="cart-total">4 / RP357</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!--jumbotron dengan carousel-->
+    <div id="jumbotronCarousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#jumbotronCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#jumbotronCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#jumbotronCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+    
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <div class="jumbotron-custom d-flex align-items-center" style="background-image: url('https://unionlabs.id/wp-content/uploads/2023/02/Web-Produk-Image-Makna.png');">
+                    <div class="container">
+                        <h1 class="display-5 fw-bold">Welcome to Vapor Haven</h1>
+                        <p class="col-md-8 fs-4">Temukan pilihan produk dan aksesoris vaping terbaik.</p>
+                        <button class="btn btn-outline-light" type="button">Belanja Sekarang</button>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="carousel-item">
+                <div class="jumbotron-custom d-flex align-items-center" style="background-image: url('https://unionlabs.id/wp-content/uploads/2024/06/Playlist-Lagu-Terhits-Juni-2024-b.jpg');">
+                    <div class="container">
+                        <h1 class="display-5 fw-bold">Produk Berkualitas</h1>
+                        <p class="col-md-8 fs-4">Berbagai pilihan e-liquid premium untuk pengalaman vaping terbaik.</p>
+                        <button class="btn btn-outline-light" type="button">Lihat Koleksi</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="carousel-item">
+                <div class="jumbotron-custom d-flex align-items-center" style="background-image: url('https://unionlabs.id/wp-content/uploads/2024/07/Panduan-Menjelajahi-Labuan-Bajo_-Dari-Destinasi-Keren-Hingga-Kebudayaan-Lokal-yang-Seru.jpg');">
+                    <div class="container">
+                        <h1 class="display-5 fw-bold">Promo Spesial</h1>
+                        <p class="col-md-8 fs-4">Dapatkan penawaran menarik untuk setiap pembelian.</p>
+                        <button class="btn btn-outline-light" type="button">Lihat Promo</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Category Navigation -->
+    <div class="category-nav">
+        <div class="container">
+            <div class="scroll-container">
+                <a href="#" class="category-item active">
+                    <i class="bi bi-box"></i>
+                    AKSESORIS VAPE
+                </a>
+                <a href="#" class="category-item">
+                    <i class="bi bi-cup-hot"></i>
+                    ENGLISH BREAKFAST
+                </a>
+                <a href="#" class="category-item">
+                    <i class="bi bi-droplet-fill"></i>
+                    MAKNA
+                </a>
+                <a href="#" class="category-item">
+                    <i class="bi bi-moisture"></i>
+                    MELDS
+                </a>
+                <a href="#" class="category-item">
+                    <i class="bi bi-battery-charging"></i>
+                    POD FRIENDLY
+                </a>
+                <a href="#" class="category-item">
+                    <i class="bi bi-camera"></i>
+                    SNAP
+                </a>
+                <a href="#" class="category-item">
+                    <i class="bi bi-bag"></i>
+                    MERCHANDISE
+                </a>
+                <a href="#" class="category-item">
+                    <i class="bi bi-tools"></i>
+                    ACCESSORIES
+                </a>
+            </div>
+        </div>
+    </div>
+
+        <!--Bagian kategori-->
+        <div class="container my-5">
+            <h2 class="text-center mb-4">Kategori Produk</h2>
+            <div class="row mb-4">
+                <div class="col-md-3">
+                    <div class="grid-box">E-liquids</div>
+                </div>
+                <div class="col-md-3">
+                    <div class="grid-box">Vape Devices</div>
+                </div>
+                <div class="col-md-3">
+                    <div class="grid-box">Coils & Tanks</div>
+                </div>
+                <div class="col-md-3">
+                    <div class="grid-box">Accessories</div>
+                </div>
+            </div>
+        </div>
+
+    <!--Bagian container e-liquid unggulan-->
+    <div class="container my-5">
+        <h2 class="text-center mb-4">E-liquid Unggulan</h2>
+        <div class="listbox-container">
+            <div class="listbox-wrapper">
+                <div class="list-item">
+                    <div class="card mb-3">
+                        <img src="https://unionlabs.id/wp-content/uploads/2022/08/d3.jpg" class="card-img-top"
+                            alt="Fruit Blast E-liquid">
+                        <div class="card-body">
+                            <h5 class="card-title">English Breakfast</h5>
+                            <p class="card-text">Morning Babe 11 mg.</p>
+                            <button class="btn btn-primary">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tambahkan lebih banyak list-item di sini -->
+                <div class="list-item">
+                    <div class="card mb-3">
+                        <img src="https://unionlabs.id/wp-content/uploads/2024/01/ebv2-11mg-1.jpg" class="card-img-top"
+                            alt="Minty Fresh E-liquid">
+                        <div class="card-body">
+                            <h5 class="card-title">English Breakfast E-liquid</h5>
+                            <p class="card-text">Morning Citrus 11 mg.</p>
+                            <button class="btn btn-primary">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="list-item">
+                    <div class="card mb-3">
+                        <img src="https://unionlabs.id/wp-content/uploads/2023/06/ebv6-3mg.png" class="card-img-top"
+                            alt="Chocolate Delight E-liquid">
+                        <div class="card-body">
+                            <h5 class="card-title">English Breakfast V6 E-liquid</h5>
+                            <p class="card-text">Morning Dew 3mg.</p>
+                            <button class="btn btn-primary">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="list-item">
+                    <div class="card mb-3">
+                        <img src="https://unionlabs.id/wp-content/uploads/2022/08/h7.jpg" class="card-img-top"
+                            alt="Chocolate Delight E-liquid">
+                        <div class="card-body">
+                            <h5 class="card-title">Melds v1 E-liquid</h5>
+                            <p class="card-text">Choco Puff 7mg.</p>
+                            <button class="btn btn-primary">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="list-item">
+                    <div class="card mb-3">
+                        <img src="https://unionlabs.id/wp-content/uploads/2022/10/melds-v2-03.jpg" class="card-img-top"
+                            alt="Minty Fresh E-liquid">
+                        <div class="card-body">
+                            <h5 class="card-title">Melds V2 E-liquid</h5>
+                            <p class="card-text">Berries Croffle 7mg.</p>
+                            <button class="btn btn-primary">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="list-item">
+                    <div class="card mb-3">
+                        <img src="https://unionlabs.id/wp-content/uploads/2022/08/j7.jpg" class="card-img-top"
+                            alt="Minty Fresh E-liquid">
+                        <div class="card-body">
+                            <h5 class="card-title">Melds V3 E-liquid</h5>
+                            <p class="card-text">Caramel Doffle 7mg.</p>
+                            <button class="btn btn-primary">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="list-item">
+                    <div class="card mb-3">
+                        <img src="https://unionlabs.id/wp-content/uploads/2023/08/melds-v4-freebase-3mg.jpg"
+                            class="card-img-top" alt="Minty Fresh E-liquid">
+                        <div class="card-body">
+                            <h5 class="card-title">Melds V4 E-liquid</h5>
+                            <p class="card-text">Pink Crust 3mg.</p>
+                            <button class="btn btn-primary">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tambahkan lebih banyak list-item sesuai kebutuhan -->
+            </div>
+            <button class="scroll-left" id="scrollLeft">
+                <i class="bi bi-chevron-left"></i>
+            </button>
+            <button class="scroll-right" id="scrollRight">
+                <i class="bi bi-chevron-right"></i>
+            </button>
+        </div>
+    </div>
+    <!--Sambungan dari e-liquid unggulan-->
+    <div class="container my-5">
+        <div class="row row-cols-1 row-cols-md-2 g-4">
+          <div class="col">
+            <div class="card">
+              <img src="https://unionlabs.id/wp-content/uploads/2022/08/j7.jpg" class="card-img-top" alt="card 1">
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">This is a card content.</p>
+              </div>
+              <div class="card-footer">
+                <small class="text-muted">Last updated 3 mins ago</small>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <img src="https://unionlabs.id/wp-content/uploads/2022/10/melds-v2-03.jpg" class="card-img-top" alt="card 1">
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">This is a card content.</p>
+              </div>
+              <div class="card-footer">
+                <small class="text-muted">Last updated 3 mins ago</small>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <img src="https://unionlabs.id/wp-content/uploads/2023/08/melds-v4-freebase-3mg.jpg" class="card-img-top" alt="card 1">
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">This is a card content.</p>
+              </div>
+              <div class="card-footer">
+                <small class="text-muted">Last updated 3 mins ago</small>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <img src="https://unionlabs.id/wp-content/uploads/2022/08/h3.jpg" class="card-img-top" alt="card 1">
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">This is a card content.</p>
+              </div>
+              <div class="card-footer">
+                <small class="text-muted">Last updated 3 mins ago</small>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    <!--Bagian container kontak email dll-->
+    <div class="container my-5">
+        <div class="row justify-content-center text-center">
+            <div class="col-md-6">
+                <h1 class="mb-4">Contact Vapor Haven</h1>
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <form id="contact-form">
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Email</label>
+                        <input type="email" class="form-control" id="email" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="message" class="form-label">Message</label>
+                        <textarea class="form-control" id="message" rows="3" required></textarea>
+                    </div>
+                    <div class="mb-3 form-check form-switch">
+                        <input class="form-check-input" type="checkbox" role="switch" id="subscribe">
+                        <label class="form-check-label" for="subscribe">Subscribe to newsletter</label>
+                    </div>
+                    <div class="mb-3">
+                        <button type="submit" class="btn btn-primary" id="submit-btn">Submit</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!--Bagian logo twitter instagram dan facebook-->
+<footer class="bg-dark">
+  <!-- Tabs nav -->
+  <ul class="nav nav-tabs nav-fill mb-3" id="footer-tabs" role="tablist">
+    <li class="nav-item" role="presentation">
+      <a
+        class="nav-link active"
+        id="footer-tab-1"
+        data-bs-toggle="tab"
+        href="#footer-tab-content-1"
+        role="tab"
+        aria-controls="footer-tab-content-1"
+        aria-selected="true"
+      >
+        COMPANY NAME
+      </a>
+    </li>
+    <li class="nav-item" role="presentation">
+      <a
+        class="nav-link"
+        id="footer-tab-2"
+        data-bs-toggle="tab"
+        href="#footer-tab-content-2"
+        role="tab"
+        aria-controls="footer-tab-content-2"
+        aria-selected="false"
+      >
+        PRODUCTS
+      </a>
+    </li>
+    <li class="nav-item" role="presentation">
+      <a
+        class="nav-link"
+        id="footer-tab-3"
+        data-bs-toggle="tab"
+        href="#footer-tab-content-3"
+        role="tab"
+        aria-controls="footer-tab-content-3"
+        aria-selected="false"
+      >
+        USEFUL LINKS
+      </a>
+    </li>
+    <li class="nav-item" role="presentation">
+      <a
+        class="nav-link"
+        id="footer-tab-4"
+        data-bs-toggle="tab"
+        href="#footer-tab-content-4"
+        role="tab"
+        aria-controls="footer-tab-content-4"
+        aria-selected="false"
+      >
+        CONTACT
+      </a>
+    </li>
+  </ul>
+
+  <!-- Tab content -->
+  <div class="tab-content" id="footer-tabs-content">
+    <!-- Tab 1 content -->
+    <div
+      class="tab-pane fade show active"
+      id="footer-tab-content-1"
+      role="tabpanel"
+      aria-labelledby="footer-tab-1"
+    >
+      <p>SELALU TERDEPAN & INOVATIF
+        Dengan komitmen untuk menyajikan pengalaman vaping yang tak tertandingi, kami di Unionlabs menghadirkan inovasi dalam industri liquid vape. Sebagai perusahaan yang berdedikasi pada kualitas, keamanan, dan kepuasan pelanggan, kami memadukan teknologi terkini dengan standar produksi yang ketat untuk menghadirkan produk liquid salt nic dan liquid freebase terbaik di pasaran. Kenali Unionlabs lebih jauh dan upaya kami untuk mengenalkan trend vaping di masyarakat.</p>
+    </div>
+
+    <!-- Tab 2 content -->
+    <div
+      class="tab-pane fade"
+      id="footer-tab-content-2"
+      role="tabpanel"
+      aria-labelledby="footer-tab-2"
+    >
+      <div class="row text-center">
+        <div class="col-md-3">
+          <ul class="list-unstyled">
+            <li>Angular</li>
+            <li>React</li>
+            <li>Vue</li>
+            <li>Laravel</li>
+          </ul>
+        </div>
+        <div class="col-md-3">
+          <ul class="list-unstyled">
+            <li>Angular</li>
+            <li>React</li>
+            <li>Vue</li>
+            <li>Laravel</li>
+          </ul>
+        </div>
+        <div class="col-md-3">
+          <ul class="list-unstyled">
+            <li>Angular</li>
+            <li>React</li>
+            <li>Vue</li>
+            <li>Laravel</li>
+          </ul>
+        </div>
+        <div class="col-md-3">
+          <ul class="list-unstyled">
+            <li>Angular</li>
+            <li>React</li>
+            <li>Vue</li>
+            <li>Laravel</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- Tab 3 content -->
+    <div
+      class="tab-pane fade"
+      id="footer-tab-content-3"
+      role="tabpanel"
+      aria-labelledby="footer-tab-3"
+    >
+      <div class="row text-center">
+        <div class="col-md-4">
+          <ul>
+            <li><a href="#">Pricing</a></li>
+            <li><a href="#">Settings</a></li>
+            <li><a href="#">Orders</a></li>
+            <li><a href="#">Help</a></li>
+          </ul>
+        </div>
+        <div class="col-md-4">
+          <ul>
+            <li><a href="#">Pricing</a></li>
+            <li><a href="#">Settings</a></li>
+            <li><a href="#">Orders</a></li>
+            <li><a href="#">Help</a></li>
+          </ul>
+        </div>
+        <div class="col-md-4">
+          <ul>
+            <li><a href="#">Pricing</a></li>
+            <li><a href="#">Settings</a></li>
+            <li><a href="#">Orders</a></li>
+            <li><a href="#">Help</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- Tab 4 content -->
+    <div
+      class="tab-pane fade"
+      id="footer-tab-content-4"
+      role="tabpanel"
+      aria-labelledby="footer-tab-4"
+    >
+      <p>
+        <i class="bi bi-house-door-fill"></i>
+        New York, NY 10012, US
+      </p>
+      <p>
+        <i class="bi bi-envelope-fill"></i>
+        info@example.com
+      </p>
+      <p>
+        <i class="bi bi-telephone-fill"></i>
+        + 01 234 567 88
+      </p>
+      <p>
+        <i class="bi bi-printer-fill"></i>
+        + 01 234 567 89
+      </p>
+    </div>
+  </div>
+
+  <!-- Social media section -->
+  <footer class="bg-dark text-center text-white">
+    <div class="container p-4 pb-0">
+      <section class="mb-4">
+        <!-- Facebook -->
+        <a class="btn btn-outline-light btn-floating m-1" href="#" role="button">
+          <i class="bi bi-facebook" style="color: #ffff;"></i>
+        </a>
+
+        <!-- Twitter -->
+        <a class="btn btn-outline-light btn-floating m-1" href="#" role="button">
+          <i class="bi bi-twitter" style="color: #ffff;"></i>
+        </a>
+
+        <!-- Google -->
+        <a class="btn btn-outline-light btn-floating m-1" href="#" role="button">
+          <i class="bi bi-google" style="color: #ffff;"></i>
+        </a>
+
+        <!-- Instagram -->
+        <a class="btn btn-outline-light btn-floating m-1" href="#" role="button">
+          <i class="bi bi-instagram" style="color: #ffff;"></i>
+        </a>
+
+        <!-- LinkedIn -->
+        <a class="btn btn-outline-light btn-floating m-1" href="#" role="button">
+          <i class="bi bi-linkedin" style="color: #ffff;"></i>
+        </a>
+
+        <!-- Github -->
+        <a class="btn btn-outline-light btn-floating m-1" href="#" role="button">
+          <i class="bi bi-github" style="color: #ffff;"></i>
+        </a>
+      </section>
+    </div>
+
+    <!-- Copyright -->
+    <div class="text-center p-3" style="background-color: #00000050;">
+        © 2024 Copyright: Vapor Haven
+    </div>
+  </footer>
+</footer>
+
+    <script src="path/to/category-nav.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.0/dist/sweetalert2.all.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

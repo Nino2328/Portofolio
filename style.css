@@ -1,0 +1,418 @@
+body {
+    background-color: #1a1a1a;
+    color: #ffffff;
+}
+
+.jumbotron-custom {
+    height: 500px; /* atau sesuaikan dengan kebutuhan */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.carousel-item .container {
+    z-index: 1;
+    position: relative;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+}
+
+.jumbotron-custom::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0,0,0,0.5); /* Overlay gelap untuk membuat teks lebih mudah dibaca */
+}
+
+.carousel-item {
+    transition: transform 2s ease, opacity .1s ease-out;
+}
+
+.navbar {
+    background-color: rgba(0, 0, 0, 0.9) !important;
+}
+
+.navbar-brand {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #ffffff !important;
+}
+
+.grid-box {
+    background: linear-gradient(145deg, #2a2a2a, #1a1a1a);
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    transition: transform 0.3s ease;
+    border: 1px solid #333;
+    margin-bottom: 15px;
+}
+
+.grid-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(124, 77, 255, 0.3);
+}
+
+/* styles.css */
+:root {
+    --primary-color: #7c4dff;
+    --dark-bg: #212529;
+}
+
+/* Top Bar Styles */
+.top-bar {
+    font-size: 0.9rem;
+}
+
+.top-bar a:hover {
+    opacity: 0.8;
+    text-decoration: none;
+}
+
+.navbar {
+    padding: 0.75rem 0;  /* Reduced padding */
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+
+.navbar-brand img {
+    max-height: 35px;  /* Slightly reduced logo size */
+}
+
+.nav-link {
+    font-size: 10px;  /* Specific font size for nav items */
+    font-weight: 500;
+    padding: 0.4rem 0.8rem !important;  /* Adjusted padding */
+    letter-spacing: 0.5px;  /* Added letter spacing for better readability */
+    text-transform: uppercase;  /* Ensure all caps */
+}
+
+.icons-group {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.icons-group a {
+    text-decoration: none;
+    font-size: 14px;  /* Matched font size */
+}
+
+.cart-total {
+    font-size: 11px;  /* Matched font size */
+    margin-left: 0.3rem;  /* Reduced margin */
+}
+
+.btn-outline-light {
+    font-size: 13px;  /* Matched font size */
+    padding: 0.4rem 0.8rem;  /* Adjusted padding */
+    letter-spacing: 0.5px;
+    background-color: rgba(0, 0, 0, 0);
+    color: #ffffff;
+    transform: translateY(10%);
+    
+}
+
+.back-link {
+    color: white;
+    font-size: 2rem;
+    text-decoration: none;
+    position: absolute;
+    left: 2rem;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+/* Category Navigation */
+.category-nav {
+    background: var(--dark-bg);
+    padding: 1rem 0;
+    border-top: 1px solid rgba(124, 77, 255, 1);
+}
+
+.scroll-container {
+    display: flex;
+    overflow-x: auto;
+    gap: 1rem;
+    padding: 0.5rem 0;
+    scrollbar-width: none;
+}
+
+.scroll-container::-webkit-scrollbar {
+    display: none;
+}
+
+.category-item {
+    color: white;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    white-space: nowrap;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 0.9rem;
+    transition: all 0.3s ease;
+}
+
+.category-item i {
+    font-size: 1.2rem;
+}
+
+.category-item.active {
+    color: var(--primary-color);
+    border-bottom: 2px solid var(--primary-color);
+}
+
+.category-item:hover {
+    color: var(--primary-color);
+}
+
+/* Responsive Styles */
+@media (max-width: 992px) {
+    .navbar-nav {
+        margin: 0.75rem 0;
+    }
+    
+    .nav-link {
+        padding: 0.3rem 0.6rem !important;
+    }
+}
+    
+    .icons-group {
+        margin-top: 1rem;
+    }
+
+
+@media (max-width: 768px) {
+    .top-bar {
+        font-size: 0.8rem;
+    }
+    
+    .category-item {
+        font-size: 0.8rem;
+    }
+}
+
+.bi {
+    font-size: 1.1rem;
+    vertical-align: -0.125em;
+}
+
+.category-item .bi {
+    font-size: 1.3rem;
+    margin-right: 0.5rem;
+}
+
+.icons-group .bi {
+    font-size: 1.2rem;
+}
+
+.btn .bi {
+    margin-right: 0.25rem;
+}
+
+.category-item {
+    transition: transform 0.2s ease, color 0.3s ease, border-color 0.3s ease;
+  }
+  
+  .category-item.active {
+    color: #007bff;
+    border-bottom: 2px solid #007bff;
+  }
+  
+  .scroll-container {
+    cursor: grab;
+  }
+
+/* Lupa ini apa */
+.containerrr {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    background-color:  rgba(124, 77, 255, 1);
+    color: #ffffff;
+}
+.header {
+    text-align: center;
+    margin-bottom: 60px;
+}
+.logo {
+    font-size: 48px;
+    font-weight: 900;
+    margin-bottom: 10px;
+}
+.tagline {
+    font-size: 24px;
+}
+.features {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.feature {
+    flex-basis: 30%;
+    text-align: center;
+    margin-bottom: 30px;
+}
+.feature-icon {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+.feature-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.feature-description {
+    font-size: 16px;
+}
+@media (max-width: 768px) {
+    .feature {
+        flex-basis: 100%;
+    }
+}
+
+/* bagian card & scroll */
+.card {
+    background: #2a2a2a;
+    border: 1px solid #333;
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(124, 77, 255, 0.3);
+}
+
+.listbox-container {
+    position: relative;
+    overflow: hidden;
+    width: 100%; /* Pastikan lebar container sesuai */
+}
+
+.listbox-wrapper {
+    display: flex;
+    overflow-x: auto; /* Memungkinkan scroll horizontal */
+    scroll-behavior: smooth; /* Animasi saat scroll */
+    padding: 10px 0; /* Ruang di atas dan bawah */
+}
+
+.list-item {
+    min-width: 300px; /* Lebar minimum untuk setiap item */
+    margin-right: 20px; /* Jarak antar item */
+}
+
+.scroll-left, .scroll-right {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    border: none;
+    color: white;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 50%;
+    z-index: 10; /* Pastikan tombol di atas konten */
+}
+
+.scroll-left {
+    left: 10px;
+}
+
+.scroll-right {
+    right: 10px;
+}
+
+.scroll-left:hover, .scroll-right:hover {
+    background: rgba(124, 77, 255, 1);
+}
+
+.btn-primary {
+    background-color: #7c4dff;
+    border-color: #7c4dff;
+}
+
+.btn-primary:hover {
+    background-color: #6c3fff;
+    border-color: #6c3fff;
+}
+
+.form-control {
+    background-color: #2a2a2a;
+    border: 1px solid #333;
+    color: white;
+}
+
+.form-control:focus {
+    background-color: #2a2a2a;
+    border-color: #7c4dff;
+    box-shadow: 0 0 0 0.25rem rgba(124, 77, 255, 0.25);
+    color: white;
+}
+
+footer {
+    background-color: rgba(0, 0, 0, 0.9) !important;
+}
+
+.dropdown-menu {
+    background-color: #2a2a2a;
+}
+
+.dropdown-item:hover {
+    background-color: #7c4dff;
+    color: white;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    padding: 10px 0;
+    bottom: 0px;
+}
+
+.nav-tabs {
+    border-top: 1px solid #dee2e6;
+    border-bottom: none;
+}
+
+.nav-tabs .nav-link {
+    color: #fff;
+    font-weight: 500;
+    border: none;
+    border-radius: 0;
+}
+
+.nav-tabs .nav-link.active {
+    background-color: none;
+    color: #fff;
+    border-bottom: 3px solid #7c4dff;
+}
+
+.tab-content {
+    padding: 24px;
+    background-color: #333;
+}
+
+.tab-content p,
+.tab-content ul {
+    color: #fff;
+    margin-bottom: 0;
+}
+
+.tab-content ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.tab-content ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.tab-content ul li a:hover {
+    color: #007bff;
+}
+
